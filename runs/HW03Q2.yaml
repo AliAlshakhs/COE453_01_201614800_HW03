@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  title: COE453_HW03_201614800
+  description: HW03 Q1 Solution.
+  version: 1.0.0
+
+host: coe453hw03q2.apigateway.coe453hw2task2.cloud.goog
+basePath: /
+schemes:
+  - https
+  - http
+
+paths:
+  /add:
+    post:
+      operationId: add_x_y
+      summary: adding x by y.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://add-qdtjytqsya-uc.a.run.app
+
+  /sub:
+    post:
+      operationId: sub_x_y
+      summary: subtracting x by y.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://sub-qdtjytqsya-uc.a.run.app
+
+  /div:
+    post:
+      operationId: div_x_y
+      summary: dividing x by y.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://div-qdtjytqsya-uc.a.run.app
+
+  /mul:
+    post:
+      operationId: mul_x_y
+      summary: multiplying x by y.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      x-google-backend:
+        address: https://mul-qdtjytqsya-uc.a.run.app
